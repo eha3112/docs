@@ -76,7 +76,7 @@ docker rename OLD_NAME NEW_NAME
 ```
 
 ## 2. Images 
-### Create image
+### 2.1 Create image
 > Create an image ..... with a particular starting command 
 
 > create an image from a docker file 
@@ -84,6 +84,7 @@ docker rename OLD_NAME NEW_NAME
 docker build -t 
 ```
 
+### 2.1 Manage image
 > Save an image into tar file
 ``` bash
 docker save IMAGE_NAME > IMAGE_NAME.tar  
@@ -94,6 +95,10 @@ docker save IMAGE_NAME > IMAGE_NAME.tar
 docker load < IMAGE_NAME.tar  
 ```
 
+> Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+``` bash
+docker tag SOURCE_IMAGE:TAG TARGET_IMAGE:TAG
+```
 
 
 
